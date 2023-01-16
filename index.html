@@ -6,9 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap-grid.min.css" integrity="sha512-JQksK36WdRekVrvdxNyV3B0Q1huqbTkIQNbz1dlcFVgNynEMRl0F8OSqOGdVppLUDIvsOejhr/W5L3G/b3J+8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+   <header>
+        <h1></h1>
+   </header>
+   
+   <form>
+        <input type="text" class="todo-input">
+        <button class="todo-button" type="submit">
+            <i class="fas fa-plus-square"></i>
+        </button>
+   </form> 
+   
+   <div class="todo-container">
+        <ul class="todo-list"></ul>
+   </div>
     
-    <script src="app.js"></script>r
+   <script src="app.js"></script>
 </body>
 </html>
