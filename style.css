@@ -3,15 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --clr-white: #fff;
+    --bg-clr-1: #e0c15a;
+    --bg-clr-2: #e28d75;
 
+    --fs-h1: 1.5rem;
+}
 body{
-    background-image: linear-gradient(120deg, #e0c15a, #e28d75);
-    color: white;
+    background-image: linear-gradient(120deg, var(--bg-clr-1), var(--bg-clr-2));
+    color: var(--clr-white);
     min-height: 100vh;
 }
 
 header{
-    font-size: 1.5rem;
+    font-size: var(--fs-h1);
 }
 
 header, form{
@@ -25,17 +31,17 @@ form input, form button{
     padding: 0.5rem;
     font-size: 2rem;
     border: none;
-    background: white;
+    background: var(--clr-white);
 }
 
 form button{
-    color: #e28d75;
-    background: white;
+    color: var(--bg-clr-2);
+    background: var(--clr-white);
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
 form button:hover{
-    background: #e28d75;
-    color: white;
+    background: var(--bg-clr-2);
+    color: var(--clr-white);
 }
