@@ -17,7 +17,7 @@ function addTodo(event){
     //create LI
     const newTodo = document.createElement("li")
     newTodo.innerText = "hey"
-    newTodo.ckassList.add("todo-item")
+    newTodo.classList.add("todo-item")
     todoDiv.appendChild(newTodo)
     //CHECK mark btn
     const completedButton = document.createElement("button")
