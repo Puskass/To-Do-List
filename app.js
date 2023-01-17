@@ -19,9 +19,14 @@ function addTodo(event){
     newTodo.innerText = "hey"
     newTodo.ckassList.add("todo-item")
     todoDiv.appendChild(newTodo)
-    //chech mark btn
+    //CHECK mark btn
     const completedButton = document.createElement("button")
-    
-    //ptoblem ne rade mi ICONE
-    completedButton.innerHTML = "<i></i>"
+    completedButton.innerHTML = '<i class="fas fa-check"> </i>'
+    completedButton.classList.add("complete-btn")
+    todoDiv.appendChild(completedButton)
+    //TRASH btn
+    const trashButton = document.createElement("button")
+    trashButton.innerHTML = '<i class="fas fa-trash"> </i>'
+    trashButton.classList.add("complete-btn")
+    todoDiv.appendChild(trashButton)   
 }
